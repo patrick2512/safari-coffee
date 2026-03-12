@@ -99,7 +99,7 @@
             <div id="cart-items" class="mb-5"></div>
 
             <div class="text-end bg-light p-4 rounded shadow-sm wow fadeInUp">
-                <h4 class="mb-3">Subtotal: KSh <span id="cart-subtotal">0</span></h4>
+                <h4 class="mb-3">Subtotal: $ <span id="cart-subtotal">0</span></h4>
                 <p class="text-muted mb-4">Shipping & taxes calculated at checkout</p>
                 <a href="checkout.html" class="btn btn-primary py-3 px-5">Proceed to Checkout</a>
                 <a href="store.html" class="btn btn-outline-primary py-3 px-5 ms-3">Continue Shopping</a>
@@ -225,7 +225,7 @@
                         <h5 class="mb-0">${item.name}</h5>
                     </div>
                 </td>
-                <td class="fw-bold">KSh ${item.price.toLocaleString()}</td>
+                <td class="fw-bold">$ ${item.price.toLocaleString()}</td>
                 <td>
                     <div class="d-flex align-items-center">
                         <button class="btn btn-sm btn-outline-secondary me-2" onclick="changeQty(${index}, -1)">−</button>
@@ -233,7 +233,7 @@
                         <button class="btn btn-sm btn-outline-secondary ms-2" onclick="changeQty(${index}, 1)">+</button>
                     </div>
                 </td>
-                <td class="fw-bold">KSh ${(item.price * item.quantity).toLocaleString()}</td>
+                <td class="fw-bold">$ ${(item.price * item.quantity).toLocaleString()}</td>
                 <td>
                     <button class="btn btn-sm text-danger" onclick="removeItem(${index})">
                         <i class="fa fa-trash fa-lg"></i>
