@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Coffee House - Coffee Shop Website Template</title>
+    <title>Safari Coffee House - Coffee Shop Website</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -168,7 +168,7 @@
                         </div>
                         <div class="store-overlay">
                             <a href="#" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="javascript:void(0)" onclick="addToCart('Nature close tea', 18.99, 'img/store-product-1.jpg')"
+                            <a href="javascript:void(0)" onclick="addToCart('Safari Blend - Medium Roast Coffee', 18.99, 'img/Safari Blend - Medium Roast Coffee.png')"
                                class="btn btn-dark rounded-pill py-2 px-4 m-2">
                                 Add to Cart <i class="fa fa-cart-plus ms-2"></i>
                             </a>
@@ -193,7 +193,7 @@
                         </div>
                         <div class="store-overlay">
                             <a href="#" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="javascript:void(0)" onclick="addToCart('Green tea tulsi', 21.99, 'img/store-product-2.jpg')"
+                            <a href="javascript:void(0)" onclick="addToCart('African Spice (Dirty Chai) - Medium Roast Coffee', 21.99, 'img/African Spice (Dirty Chai) - Medium Roast Coffee.png')"
                                class="btn btn-dark rounded-pill py-2 px-4 m-2">
                                 Add to Cart <i class="fa fa-cart-plus ms-2"></i>
                             </a>
@@ -217,7 +217,7 @@
                         </div>
                         <div class="store-overlay">
                             <a href="#" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="javascript:void(0)" onclick="addToCart('Instant tea premix',18.99, 'img/store-product-3.jpg')"
+                            <a href="javascript:void(0)" onclick="addToCart('Serengeti Blend - Dark Roast Coffee',18.99, 'img/Serengeti Blend - Dark Roast Coffee.png')"
                                class="btn btn-dark rounded-pill py-2 px-4 m-2">
                                 Add to Cart <i class="fa fa-cart-plus ms-2"></i>
                             </a>
@@ -242,7 +242,7 @@
         <div class="mt-4 pt-3 border-top">
             <div class="d-flex justify-content-between mb-3">
                 <strong>Subtotal:</strong>
-                <strong id="mini-subtotal">KSh 0</strong>
+                <strong id="mini-subtotal">$ 0</strong>
             </div>
             <a href="cart.html" class="btn btn-outline-primary w-100 mb-2">View Cart</a>
             <a href="checkout.html" class="btn btn-primary w-100">Checkout</a>
@@ -264,7 +264,7 @@
                     <h4 class="text-primary mb-4">Our Office</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Bristol, United Kingdom, UK</p>
                     <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+44 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>cofeenow.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>SafariCoffee UK</p>
                     <div class="d-flex pt-3">
                         <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -308,7 +308,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium" href="#">Coffee now</a>, All Right Reserved.
+                    &copy; <a class="fw-medium" href="#">SafariCoffee UK</a>, All Right Reserved.
                 </div>
                 </div>
         </div>
@@ -388,7 +388,7 @@
                         <img src="${item.image}" alt="" style="width:60px;height:60px;object-fit:cover;border-radius:6px;" class="me-3">
                         <div style="flex:1;">
                             <strong>${item.name}</strong><br>
-                            KSh ${item.price.toLocaleString()} × ${item.quantity}
+                            $ ${item.price.toLocaleString()} × ${item.quantity}
                         </div>
                         <div>
                             <button onclick="changeQty(${index}, -1)">-</button>
@@ -402,7 +402,7 @@
                 });
             }
             const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-            document.getElementById('mini-subtotal').textContent = `KSh ${subtotal.toLocaleString()}`;
+            document.getElementById('mini-subtotal').textContent = `$ ${subtotal.toLocaleString()}`;
         }
 
         // Initialize cart on every page load
